@@ -1,2 +1,2 @@
-# MaTravel5
-Finalna poboljšanja, cache optimizacija, cdn korištenje
+# MaTravel3
+Optimizacija CSS-a, JS i font
