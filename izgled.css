@@ -1,0 +1,874 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("Interfont.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cinzel";
+    src: url("Cinzelfont.woff2") format("woff2");
+    font-weight: 400 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #222;
+    font-display: swap;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    color: #fdf6ec;
+    backdrop-filter: blur(2px) brightness(0.7);
+    background: rgba(15, 76, 92, 0.25);
+    border-bottom: 1px solid #0f4c5c;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.logo {
+    font-family: "Cinzel", serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #fdf6ec;
+}
+
+.navigacija {
+    display: flex;
+    gap: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.navigacija a {
+    color: #fdf6ec;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.4s;
+    border-bottom: 2px solid transparent;
+    padding: 20px 0;
+}
+
+.navigacija a:hover {
+    color: #e9c46a;
+    border-bottom: 2px solid #e9c46a;
+}
+.navigacija a.active{
+    border-bottom: 2px solid #e9c46a;
+}
+
+.hamburger {
+    display: none;
+    font-size: 32px;
+    color: #fdf6ec;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    backdrop-filter: blur(2px) brightness(0.1);
+    background: rgba(15, 76, 92, 0.25);
+    border-top: 1px solid #0f4c5c;
+    color: #fdf6ec;
+    text-align: center;
+    padding: 25px 0px;
+    font-family: "Cinzel", serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.pocetna{
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pozadinaplaza{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(48, 48, 28, 0.315);
+}
+.odjeljak{
+    position: relative;
+    z-index: 3;
+    color: #FDF6EC;
+    
+    max-width: 1050px;
+    text-align: center;
+}
+.odjeljak h1{
+    font-size: 60px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.odjeljak p{
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    text-align: center;
+}
+.odjeljakgumb{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FDF6EC;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    backdrop-filter: blur(22px) brightness(0.7);
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #f3f3f3;
+    text-decoration: none;
+}
+.odjeljakgumb:hover{
+    background-color: #e9c46a;
+    color: black;
+    transition: 0.5s;
+    backdrop-filter: blur(2px) brightness(1);
+    background: rgba(92, 87, 15, 0.25);
+    border: 1px solid #e9c46a;
+    text-decoration: none;
+}
+
+.destinacije{
+    padding: 50px 0;
+    background-color: #FDF6EC;
+    text-align: center;
+    
+}
+
+.destinacije h2{
+    font-size: 32px;
+    color: #0f4c5c;
+    margin-bottom: 45px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.karticepolozaj{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.kartica{
+    width: 260px;
+    height: 300px;
+    border: 1px solid #0f4c5c;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: #FDF6EC;
+    cursor: pointer;
+    text-decoration: none;
+}
+.tamnije{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.1));
+    z-index: 1;
+}
+.karticasadrzaj{
+    position: relative;
+    padding: 30px 10px;
+    z-index: 2;
+    text-align: left;
+}
+.lanzarote .zoom{
+    background-image: url("slike/lanzarote/lanzarote.webp");
+}
+.budimpesta .zoom{
+    background-image: url("slike/budimpesta/budimpesta.webp");
+}
+.casablanca .zoom{
+    background-image: url("slike/casablanca/casablanca.webp");
+}
+.venecija .zoom{
+    background-image: url("slike/venecija/venecija.webp");
+}
+.karticasadrzaj h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.karticasadrzaj h4{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #d6bea7;
+}
+.karticasadrzaj i{
+    font-size: 12px;
+    color: #d6bea7;
+}
+.karticasadrzaj{
+    transition: transform 0.3s ease;
+}
+.kartica:hover .karticasadrzaj{
+    transform: translateY(-6px);
+}
+.kartica:hover .tamnije{
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.35)
+    );
+}
+.kartica:hover .zoom{
+    transform: scale(1.10);
+}
+
+.zoom{
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+
+.zastobasmi{
+    background-image: url("slike/zastobasmi.webp");
+    position: relative;
+    padding: 80px 0;
+    color: #FDF6EC;
+    text-align: center;
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+}
+.naslovzastobasmi{
+    margin-bottom: 50px;
+}
+.zastobasmi::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(17, 17, 11, 0.493);
+}
+.naslovzastobasmi h2{
+    font-size: 34px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.naslovzastobasmi p{
+    font-size: 17px;
+    color: #FDF6EC;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.zastobasmi .container{
+    position: relative;
+    z-index: 2;
+}
+
+.karticezasto{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.karticazasto{
+    flex: 1;
+    max-width: 320px;
+    padding: 35px 25px;
+    transition: 0.5s ease;
+    color: black;
+    backdrop-filter: blur(2px) brightness(0.9);
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #FDF6EC;
+}
+.karticazasto:hover{
+    color: #FDF6EC;
+    backdrop-filter: blur(2px) brightness(1);
+    background: rgba(15, 76, 92, 0.25);
+    border: 1px solid #0f4c5c;
+    transition: 0.5s ease;
+}
+.karticazasto p{
+    padding-top: 10px;
+}
+.prazno{
+    margin-top: 60px;
+}
+
+.slajdshow{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.kutijaslajd{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slajd{
+    height: 600px;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+.slajd.active{
+    opacity: 1;
+}
+.slajd::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.slajd img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.05);
+    transition: transform 1s ease;
+    
+}
+.slajd.active img{
+    transform: scale(1);
+}
+.poruka{
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: rgba(0,0,0,0.4);
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FDF6EC; 
+    padding-bottom: 30px;
+}
+
+.skriveno{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+.skriveno2{
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 1s ease;
+}
+.pokazi{
+    opacity: 1;
+    transform: translateY(0);
+}
+.opcenito{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0px;
+}
+.opcenitotekst{
+    width: 50%;
+}
+.opcenito h2{
+    font-size: 36px;
+    margin-bottom: 22px;
+}
+.opcenito p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.opcenitoslika {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.opcenitoslika img{
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid black;
+    object-fit: contain;
+}
+.gumbklasa{
+        margin-top: 40px;
+}
+
+.opcenito .gumb{
+    padding: 12px 24px;
+    border: none;
+    color: #FDF6EC;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    backdrop-filter: blur(2px) brightness(0.2);
+    background: rgba(15, 76, 92, 0.25);
+    border: 1px solid #0f4c5c;
+
+    
+    
+
+}
+.opcenito .gumb:hover{
+    background-color: #e9c46a;
+    color: black;
+    transition: 0.5s;
+    
+    text-decoration: none;
+    backdrop-filter: blur(2px) brightness(0.7);
+    background: rgba(122, 116, 23, 0.5);
+    border: 1px solid #e9c46a;
+
+}
+img, video{
+    max-width: 100%;
+    height: auto;
+}
+video{
+    pointer-events: none;
+}
+
+
+.tamnija{
+    backdrop-filter: blur(2px) brightness(0.32);
+    background-color: rgb(62, 87, 98);
+    border-bottom: 1px solid #0f4c5c;
+}
+.destinacijeskrol{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 404px;
+    gap: 1px;
+}
+.destinacijaslika{
+    flex: 1;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+.destinacijaslika::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+.destinacijaslika:hover::before{
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.1));
+}
+
+.destinacijatekst{
+    flex: 1;
+    
+}
+.okvir{
+    height: 350px;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.gumbdestinacije{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FDF6EC;
+    color: #FDF6EC;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    backdrop-filter: blur(22px) brightness(0.7);
+    background: #0f4c5c;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.gumbdestinacije:hover{
+    background-color: #e9c46a;
+    color: black;
+    transition: 0.5s;
+    backdrop-filter: blur(2px) brightness(1);
+    background: rgba(92, 87, 15, 0.25);
+    border: 1px solid #e9c46a;
+    text-decoration: none;
+}
+.destinacijatekst h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.destinacijatekst h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color:#0f4c5c;
+}
+.destinacijatekst h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.destinacijatekst p{
+    padding-bottom: 20px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.lanzarote{
+    background-image: url("slike/lanzarote/lanzarote.webp");
+}
+.lanzarote:hover{
+    background-image: url("slike/lanzarote/lanzarote2.webp");
+    transition: 0.5s ease-in-out;
+}
+.budimpesta{
+    background-image: url("slike/budimpesta/budimpesta.webp");
+}
+.budimpesta:hover{
+    background-image: url("slike/budimpesta/budimpesta2.webp");
+    transition: 0.5s ease-in-out;
+}
+.casablanca{
+    background-image: url("slike/casablanca/casablanca.webp");
+}
+.venecija{
+    background-image: url("slike/venecija/venecija.webp");
+}
+.venecija:hover{
+    background-image: url("slike/venecija/IMG_3850.webp");
+    transition: 0.5s ease-in-out;
+}
+h1{
+    padding-top: 35px;
+    letter-spacing: 1px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.galerijaslika{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 270px;
+    gap: 2px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.karticaugaleriji{
+    position: relative;
+    overflow: hidden;
+}
+.karticaugaleriji img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.karticaugaleriji img:hover{
+    transform: scale(1.05);
+    border: 1px solid black;
+    
+}
+.karticaugaleriji.duplo{
+    grid-row: span 2;
+}
+
+
+.kontakt{
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 60px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    background-color: #d6bea754;
+}
+.kontaktlijevo{
+    padding: 30px;
+}
+.kontaktdesno{
+    padding: 20px;
+}
+.forma{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.forma input{
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+}
+.forma textarea{
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+}
+.pedesetposto{
+    display: flex;
+    gap: 10px;
+}
+.unutrasnjost{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.forma button{
+    padding: 12px 24px;
+    border: none;
+    color: #FDF6EC;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    backdrop-filter: blur(2px) brightness(0.2);
+    background: rgba(15, 76, 92, 0.25);
+    border: 1px solid #0f4c5c;
+}
+.forma button:hover{
+    background-color: #e9c46a;
+    color: black;
+    transition: 0.5s;
+    backdrop-filter: blur(2px) brightness(1);
+    background: rgba(92, 87, 15, 0.25);
+    border: 1px solid #ccab57;
+    text-decoration: none;
+}
+.infokontakt{
+    font-size: 18px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.infokontakt i {
+    font-size: 30px;
+    padding-right: 20px;
+}
+.kontaktinfo h3{
+    font-size: 23px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #0f4c5c;
+}
+.kontaktinfo h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.drustvenemreze i{
+    font-size: 30px;
+    padding-right: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (max-width: 1270px) {
+    .container{
+        padding: 0 20px;
+    }
+    .karticepolozaj{
+        justify-content: center;
+    }
+    .kartica{
+        width: calc(50% - 20px);
+    }
+    .galerijaslika{
+        grid-auto-rows: 200px;
+    }
+    .infokontakt{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .kontakt{
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar .container{
+        padding: 10px 20px;
+    }
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .navigacija {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        background: rgba(15, 76, 92, 0.95);
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+        
+    }
+
+    .navigacija a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .navigacija.active {
+        max-height: 500px;
+        position: fixed;
+        gap: 20px;
+        background: rgb(62, 87, 98);
+    }
+    .pocetna{
+        height: 450px;
+    }
+    .slajdshow{
+        height: 480px;
+    }
+    .slajd{
+        height: 480px;
+    }
+    .odjeljak{
+        margin-top: 60px;
+    }
+    .odjeljak h1{
+        font-size: 38px;
+    }
+    .odjeljak p{
+        font-size: 16px;
+    }
+    .kartica{
+        width: 90%;
+    }
+    .karticazasto{
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+    .opcenito{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .opcenitoslika{
+        display: none;
+    }
+    .opcenitotekst{
+        text-align: left;
+        width: 90%;
+    }
+    .naslovzastobasmi{
+        margin-bottom: 15px;
+    }
+    .karticezasto{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    .karticazasto{
+        width: 90%;
+
+    }
+    .destinacijeskrol{
+        flex-direction: column;
+        margin-top: 15px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .destinacijaslika{
+        display: none;
+    }
+    .okvir{
+        padding: 15px;
+        height: auto;
+    }
+    .galerijaslika{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 170px;
+    }
+    .karticaugaleriji.duplo{
+        grid-row: span 2;
+    }
+    .kontakt{
+        grid-template-columns: 1fr;
+        gap:10px;
+        margin-top: 80px;
+    }
+    .pedesetposto{
+        flex-direction: column;
+    }
+    .forma{
+        padding: 0 10px 0 10px;
+    }
+    .infokontakt{
+        padding:  7px 0 7px 0;
+    }
+    .kontaktlijevo{
+        padding: 20px 30px 0px 30px;
+    }
+    .kontaktinfo h3{
+        padding-bottom: 10px;
+    }
+    .zastobasmi{
+        background-image: url("slike/zastobasmimobitel.webp");
+    }
+}

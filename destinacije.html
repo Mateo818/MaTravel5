@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MaTravel je web stranica napravljena za izradu završnog rada. Smisao stranice je da predstavlja agenciju za putovanja kako bih pomoću različitih verzija pokazao optimizaciju stranice.">
+    <title>Destinacije - MaTrevel</title>
+    <meta name="author" content="Mateo Ćorković">
+    <link rel="stylesheet" href="izgledMINI.min.css">
+    <link rel="preload" as="font" href="Interfont.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="Cinzelfont.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+
+</head>
+<body>
+    <header class="navbar tamnija">
+        <div class="container">
+            <a href="index.html" class="logo">MaTravel</a>
+
+            <nav class="navigacija" id="navigacija">
+                <a href="index.html">Početna</a>
+                <a href="destinacije.html" class="active">Destinacije</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+            ☰
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="prazno"></div>
+
+    <div class="container">
+        <h1>Destinacije</h1>
+        <section class="destinacijeskrol skriveno">
+            <div class="destinacijaslika lanzarote"></div>
+            <div class="destinacijatekst">
+                <div class="okvir">
+                        <h2>Lanzarote</h2>
+                    <div class="info">
+                        <span><h3><i class="fa-solid fa-location-dot"></i> Španjolska</h3></span>
+                        <span><h3><i class="fa-solid fa-thermometer-empty"></i> 25°C</h3></span>
+                    </div>
+                    
+                    <h4>Opis</h4>
+                    <p>Vulkanski otok u Španjolskoj poznat po crnim plažama i prirodi. Jedan od Kanarskih otoka smješten je zapadno od Afrike na Atlantskom oceanu. Temperature rijetko padaju ispod 20 stupnjeva pa čak i tijekom zime. 
+                    </p>
+                    <a href="galerija.html" class="gumbdestinacije">Odaberi</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="destinacijeskrol reverse skriveno2">
+            <div class="destinacijaslika budimpesta"></div>
+            <div class="destinacijatekst">
+                <div class="okvir">
+                    <h2>Budimpešta</h2>
+                    <div class="info">
+                        <span><h3><i class="fa-solid fa-location-dot"></i> Mađarska</h3></span>
+                        <span><h3><i class="fa-solid fa-thermometer-empty"></i> 20°C</h3></span>
+                    </div>
+                    <h4>Opis</h4>
+                    <p>Glavni grad Mađarske. Ovo je jedan od najljepših gradova u Europi. Najpoznatiji je po zgradi parlamenta i cipelama na obali rijeke Dunav. Većina ljudi dolaskom u Budimpeštu ode na plovidbu brodom po Dunavu.</p>
+                    <a href="galerija.html" class="gumbdestinacije">Odaberi</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="destinacijeskrol skriveno">
+            <div class="destinacijaslika casablanca"></div>
+            <div class="destinacijatekst">
+                <div class="okvir">
+
+                    <h2>Casablanca</h2>
+                    <div class="info">
+                        <span><h3><i class="fa-solid fa-location-dot"></i> Maroko</h3></span>
+                        <span><h3><i class="fa-solid fa-thermometer-empty"></i> 32°C</h3></span>
+                    </div>
+                    <h4>Opis</h4>
+                    <p>Moderni marokanski grad uz Atlantski ocean. To je najveći grad u Maroku i glavna luka na Atlantskom ocenu. Grad je najpozantiji po jednoj od najvećih džamija na svijetu koja je otvorena za sve posjetitelje.  </p>
+                    <a href="galerija.html" class="gumbdestinacije">Odaberi</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinacijeskrol reverse skriveno2">
+            <div class="destinacijaslika venecija"></div>
+            <div class="destinacijatekst">
+                <div class="okvir">
+
+                    <h2>Venecija</h2>
+                    <div class="info">
+                        <span><h3><i class="fa-solid fa-location-dot"></i> Italija</h3></span>
+                        <span><h3><i class="fa-solid fa-thermometer-empty"></i> 24°C</h3></span>
+                    </div>
+                    <h4>Opis</h4>
+                    <p>Grad kanala i mostova. Smješten je na obali Jadranskog mora. U gradu je smješteno puno palača, a najpoznatije mjesto u gradu je Trg svetog Marka. Promet se obavlja u kanalima sa bez motornih vozila. </p>
+                    <a href="galerija.html" class="gumbdestinacije">Odaberi</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
+
+    
+    
+     <section class="slajdshow skriveno">
+        <div class="kutijaslajd">
+            <div class="slajd active">
+                <img src="slike/slajdshow/venecija.webp" loading="lazy" alt="Kanali u Veneciji">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/verona.webp" loading="lazy" alt="Zgrade grada Verona">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/lanzarote3.webp" loading="lazy" alt="Pogled sa vrha otoka Lanzarote">
+                <div class="poruka">Istraži svijet</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/kamenje.webp" loading="lazy" alt="Kamenje i litice na Lanzaroteu">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/zagreb.webp" loading="lazy" alt="Centar grada Zagreba">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+    <footer>
+        <p>© 2026 MaTravel</p>
+        <p>Izradio: Mateo Ćorković</p>
+    </footer>
+    
+    <script src="scriptMINI.min.js" defer></script>
+</body>
+</html>

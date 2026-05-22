@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MaTravel je web stranica napravljena za izradu završnog rada. Smisao stranice je da predstavlja agenciju za putovanja kako bih pomoću različitih verzija pokazao optimizaciju stranice.">
+    <title>Kontakt - MaTrevel</title>
+    <meta name="author" content="Mateo Ćorković">
+    <link rel="stylesheet" href="izgledMINI.min.css">
+    <link rel="preload" as="font" href="Interfont.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="Cinzelfont.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body>
+    <header class="navbar tamnija">
+        <div class="container">
+            <a href="index.html" class="logo">MaTravel</a>
+            <nav class="navigacija" id="navigacija">
+                <a href="index.html">Početna</a>
+                <a href="destinacije.html">Destinacije</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="kontakt.html" class="active">Kontakt</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+            ☰
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="prazno"></div>
+
+    <div class="container">
+        <section class="kontakt">
+            <div class="kontaktlijevo">
+                <div class="kontaktinfo">
+                    <h2>Kontakt</h2>
+                    <h3>Pošaljite nam pitanje</h3>
+                    <p>Za sva pitanja nam pošaljite poruku, bila ona vezana za putovanje ili nešto drugo. </p>
+                    <div class="infokontakt">
+                        <i class="fa-regular fa-envelope"></i>info@matravel.hr
+                    </div>
+                    <div class="drustvenemreze">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="kontaktdesno">
+                <form class="forma">
+                    <div class="pedesetposto">
+                        <div class="unutrasnjost">
+                            <label for="ime">Ime</label>
+                            <input type="text" id="ime" required>
+                        </div>
+                        <div class="unutrasnjost">
+                            <label for="prezime">Prezime</label>
+                            <input type="text" id="prezime" required>
+                        </div>
+                    </div>
+                    <div class="unutrasnjost stoposto">
+                        <label for="emailkontakt">E-mail</label><input type="email" id="emailkontakt" required>
+                    </div>
+                    <div class="unutrasnjost stoposto">
+                        <label for="destinacijakontakt" >Destinacija</label><input type="text" id="destinacijakontakt">
+                    </div>
+                    <div class="unutrasnjost stoposto">
+                        <label for="porukaforma" >Poruka</label><textarea rows="5" id="porukaforma" required></textarea>
+                    </div>
+                    <button type="submit">Pošalji</button>
+                </form>
+            </div>
+            
+        </section>
+    </div>
+    
+    
+
+    
+    
+     <section class="slajdshow skriveno">
+        <div class="kutijaslajd">
+            <div class="slajd active">
+                <img src="slike/slajdshow/venecija.webp" loading="lazy" alt="Kanali u Veneciji">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/verona.webp" loading="lazy" alt="Zgrade grada Verona">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/lanzarote3.webp" loading="lazy" alt="Pogled sa vrha otoka Lanzarote">
+                <div class="poruka">Istraži svijet</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/kamenje.webp" loading="lazy" alt="Kamenje i litice na Lanzaroteu">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/zagreb.webp" loading="lazy" alt="Centar grada Zagreba">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+    <footer>
+        <p>© 2026 MaTravel</p>
+        <p>Izradio: Mateo Ćorković</p>
+    </footer>
+   
+    <script src="scriptMINI.min.js" defer></script>
+</body>
+</html>
