@@ -93,7 +93,7 @@ footer {
     width: 100%;
     backdrop-filter: blur(2px) brightness(0.1);
     background: rgba(13, 65, 78, 0.25);
-    border-top: 1px solid #0f4c5c;
+    border-top: 1px solid #09272ec0;
     color: #ffffff;
     text-align: center;
     padding: 25px 0px;
@@ -102,7 +102,7 @@ footer {
     letter-spacing: 2px;
 }
 footer p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .pocetna{
