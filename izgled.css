@@ -572,17 +572,37 @@ video{
 .reverse{
     flex-direction: row-reverse;
 }
+.lanzarote{
+    background-image: url("slike/lanzarote/lanzarote800.webp");
+    background-size: cover;
+}
 .lanzarote:hover{
     background-image: url("slike/lanzarote/lanzarote2.webp");
-    transition: 0.5s ease-in-out;
+    opacity: 0.9;
+}
+.budimpesta{
+    background-image: url("slike/budimpesta/budimpesta800.webp");
+    background-size: cover;
 }
 .budimpesta:hover{
     background-image: url("slike/budimpesta/budimpesta2.webp");
-    transition: 0.5s ease-in-out;
+    opacity: 0.9;
+}
+.venecija{
+    background-image: url("slike/venecija/venecija800.webp");
+    background-size: cover;
 }
 .venecija:hover{
-    background-image: url("slike/venecija/IMG_3850.webp");
-    transition: 0.5s ease-in-out;
+    background-image: url("slike/venecija/IMG_3850mobitel.webp");
+    opacity: 0.9;
+}
+.casablanca{
+    background-image: url("slike/casablanca/casablanca800.webp");
+    background-size: cover;
+}
+.casablanca:hover{
+    background-image: url("slike/casablanca/casablanca2.webp");
+    opacity: 0.9;
 }
 h1{
     padding-top: 35px;
