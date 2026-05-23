@@ -92,8 +92,8 @@ footer {
     z-index: 10;
     width: 100%;
     backdrop-filter: blur(2px) brightness(0.1);
-    background: rgba(15, 76, 92, 0.25);
-    border-top: 1px solid #0c272ed5;
+    background: #08191de8;
+    border-top: 1px solid #0e2930;
     color: #ffffff;
     text-align: center;
     padding: 25px 0px;
