@@ -549,16 +549,18 @@ video{
     font-size: 32px;
     margin-bottom: 10px;
 }
-.destinacijatekst h4{
+.destinacijatekst h3{
     font-size: 16px;
     margin-bottom: 20px;
     text-transform: uppercase;
     color:#0f4c5c;
+    
 }
-.destinacijatekst h3{
+.destinacijatekst h4{
     font-size: 18px;
     margin-bottom: 10px;
     letter-spacing: 1px;
+    
 }
 .destinacijatekst p{
     padding-bottom: 20px;
