@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaTrevel - Casablanca</title>
+    <meta name="description" content="MaTravel je web stranica napravljena za izradu završnog rada. Smisao stranice je da predstavlja agenciju za putovanja kako bih pomoću različitih verzija pokazao optimizaciju stranice.">
+    <meta name="author" content="Mateo Ćorković">
+    <link rel="stylesheet" href="izgledMINI.min.css">
+    <link rel="preload" as="font" href="Interfont.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="Cinzelfont.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+
+</head>
+<body>
+    <header class="navbar tamnija">
+        <div class="container">
+            <a href="index.html" class="logo">MaTravel</a>
+
+            <nav class="navigacija" id="navigacija">
+                <a href="index.html">Početna</a>
+                <a href="destinacije.html">Destinacije</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+            ☰
+            </div>
+        </div>
+    </header>
+    <main>
+    <div class="prazno"></div>
+    <div class="container">
+        <div class="natrag">
+            <a href="#" class="natraggumb" onclick="window.history.back(); return false;">← Natrag</a>
+        </div>
+        <section class="malagalerija">
+            <div class="kockica maloveca">
+                <img src="slike/casablanca/casablanca2.webp" alt="Džamija Hassan II u Casablanci" >
+            </div>
+            <div class="kockica">
+                <img src="slike/casablanca/casablanca.webp" alt="Pogled na džamiju u Casablanci">
+            </div>
+            <div class="kockica">
+                <img src="slike/casablanca/IMG_2537.webp" alt="Tržnica u Casablanci" loading="lazy">
+            </div>
+            <div class="kockica">
+                <img src="slike/casablanca/IMG_2547.webp" alt="Trg Mohammed V u Casablanci" loading="lazy">
+            </div>
+            <div class="kockica">
+                <img src="slike/casablanca/IMG_2552.webp" alt="Unutrašnjost džamije Hassan II" loading="lazy">
+            </div>
+        </section>
+        <nav class="malanavigacija">
+            <a href="#detalji"  class="malanavigacijalink active">Detalji</a>
+            <a href="#opcenito"  class="malanavigacijalink">Općenito</a>
+            <a href="#lokacije" class="malanavigacijalink">Lokacije</a>
+            <a href="#rezervacije" class="malanavigacijalink">Rezervacije</a>
+        </nav>
+        <section id="detalji" class="detalji">
+            <div class="detaljilijevo">
+                <h1>Casablanca</h1>
+                    <h2><i class="fa-solid fa-location-dot"></i> Maroko</h2>
+                    <h2><i class="fa-solid fa-thermometer-empty"></i> 32°C</h2>
+                    <div class="ocjena">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                <p>Moderni marokanski grad uz Atlantski ocean. To je najveći grad u Maroku i glavna luka na Atlantskom ocenu. Grad je najpozantiji po jednoj od najvećih džamija na svijetu koja je otvorena za sve posjetitelje.</p>
+                <section class="smjestaj">
+                    <h2>O smještaju</h2>
+                    <ul class="listasmjestaj">
+                        <li><i class="fa-solid fa-wifi"></i> Besplatan WiFi</li>
+                        <li><i class="fa-solid fa-cutlery"></i> Kuhinja sa svim osnovnim aparatima</li>
+                        <li><i class="fa-solid fa-wind"></i> Klimatizacija</li>
+                        <li><i class="fa-solid fa-bath"></i> Dvije kupaonice</li>
+                        <li><i class="fa-solid fa-eye"></i> Terasa sa pogledom na centar</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="detaljidesno">
+                <h2 class="cijena">Cijena: 1199€ <span class="prekrizeno">1399€</span></h2>
+                <p>7 noćenja - 2 osobe - povratna avionska karta</p>
+                <form class="formarezervacije">
+                    <label for="ime">Ime</label>
+                    <input type="text" id="ime" name="ime">
+                    <label for="prezime">Prezime</label>
+                    <input type="text" id="prezime" name="prezime">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                    <label for="osobe">Broj osoba</label>
+                    <select id="osobe">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <label for="datum">Datum putovanja</label>
+                    <input type="date" id="datum">
+                    <button type="submit">Rezerviraj</button>
+                </form>
+            </div>
+        </section>
+        <section id="opcenito" class="maloopcenito skriveno2">
+            <div class="lijevoopcenito">
+                <h1>Općenito o destinaciji</h1>
+                <p>Casablanca je najveći grad u Maroku. Maroko je država na zapadnoj obali Afrike. Casablanaca je glavno gospodarsko središte Maroka. Najpoznatiji je po džamiji Hassan II koja se nalazi na obali Atlantskog oceana.</p>
+                <h2>Zašto baš Casablanca</h2>
+                <p>Casablanca je odlična za ljude koji žele vidjeti moderni i tradicionalni život u jednom gradu. Grad ima odličnu hranu i ugodnu klimu.</p>
+            </div>
+
+            <div class="opcenitokarta">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127284.67612995417!2d-7.689667235089539!3d33.577195590918436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca%2C%20Maroko!5e1!3m2!1shr!2shr!4v1779830016309!5m2!1shr!2shr" width="350" height="300" style="border:1px solid black;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                
+            </iframe>
+            </div>
+        </section>
+        <section id="lokacije" class="malalokacija skriveno">
+            <h1>Top lokacije</h1>
+            <div class="malekarticelokacija">
+                <div class="malakarticalokacija">
+                    <img src="slike/casablanca/casablanca2.webp" alt="Džamija Hassan II u Casablanci" loading="lazy">
+                    <h2>Džamija Hassan II</h2>
+                    <p>Najpoznatija atrakcija u Casablanci.</p>
+                </div>
+                <div class="malakarticalokacija">
+                    <img src="slike/casablanca/IMG_2547.webp" alt="Trg Mohammed V u Casablanci" loading="lazy">
+                    <h2>Trg Mohammed V</h2>
+                    <p>Centar grada.</p>
+                </div>
+                <div class="malakarticalokacija">
+                    <img src="slike/casablanca/IMG_2537.webp" alt="Tržnica u Casablanci" loading="lazy">
+                    <h2>Tržnica blizu glavnog trga</h2>
+                    <p>Tržnica blizu centra grada</p>
+                </div>
+            </div>
+        </section>
+        <section id="rezervacije" class="malorezervacije skriveno2">
+            <h1>Informacije o rezervacijama</h1>
+            <div class="rezervacijesve">
+                <div class="rezervacijelijevo">
+                    <h2>Što je uključeno?</h2>
+                    <ul class="listasmjestaj">
+                        <li><i class="fa-solid fa-plane"></i> Povratna avionska karta</li>
+                        <li><i class="fa-solid fa-bus"></i> Prijevoz od aerodroma do hotela</li>
+                        <li><i class="fa-solid fa-mug-saucer"></i> Doručak u hotelu</li>
+                        <li><i class="fa-solid fa-route"></i> Prijevoz između atrakcija</li>
+                    </ul>
+            </div>
+            <div class="rezervacijedesno">
+                <h2>Uvjeti rezervacije</h2>
+                <p>Rezervacije se mogu napraviti najmanje tjedan dana prije polaska.</p>
+                <p>Otkazivanje putovanja moguće je do 48 sati prije polaska.</p>
+                <p>Za državljane EU nije potrebna viza.</p>
+                <p>Check-in je od 14:00 sati.</p>
+            </div>    
+            </div>
+            
+        </section>
+    </div>
+
+    <section class="destinacije skriveno destinacijedodatno">
+        <div class="container">
+            <h2>Popularne destinacije</h2>
+            <div class="karticedodatne">
+                <a href="lanzarote.html" class="karticadodatna lanzarote skriveno">
+                    <div class="zoom"></div>
+                    <div class="tamnije"></div>
+                    <div class="karticasadrzaj">
+                        <h3>Lanzarote</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i> Španjolska</h4>
+                    </div>
+                </a>
+                <a href="budimpesta.html" class="karticadodatna budimpesta skriveno2">
+                    <div class="zoom"></div>
+                    <div class="tamnije"></div>
+                    <div class="karticasadrzaj">
+                        <h3>Budimpešta</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i> Mađarska</h4>
+                    </div>
+                </a>
+                <a href="venecija.html" class="karticadodatna venecija skriveno2">
+                    <div class="zoom"></div>
+                    <div class="tamnije"></div>
+                    <div class="karticasadrzaj">
+                        <h3>Venecija</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i> Italija</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="slajdshow skriveno">
+        <div class="kutijaslajd">
+            <div class="slajd active">
+                <img src="slike/slajdshow/venecija1920.webp"
+                srcset="slike/slajdshow/venecija800.webp 800w, 
+                        slike/slajdshow/venecija1000.webp 1000w, 
+                        slike/slajdshow/venecija1200.webp 1200w, 
+                        slike/slajdshow/venecija1600.webp 1600w, 
+                        slike/slajdshow/venecija1920.webp 1920w" 
+                sizes="100vw"
+                loading="lazy" alt="Kanali u Veneciji">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/verona1920.webp"
+                srcset="slike/slajdshow/verona800.webp 800w, 
+                        slike/slajdshow/verona1000.webp 1000w, 
+                        slike/slajdshow/verona1200.webp 1200w, 
+                        slike/slajdshow/verona1600.webp 1600w, 
+                        slike/slajdshow/verona1920.webp 1920w" 
+                sizes="100vw"
+                loading="lazy" alt="Zgrade grada Verona">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/lanzarote31920.webp" 
+                srcset="slike/slajdshow/lanzarote3800.webp 800w, 
+                        slike/slajdshow/lanzarote31000.webp 1000w, 
+                        slike/slajdshow/lanzarote31200.webp 1200w, 
+                        slike/slajdshow/lanzarote31600.webp 1600w, 
+                        slike/slajdshow/lanzarote31920.webp 1920w" 
+                sizes="100vw"
+                loading="lazy" alt="Pogled sa vrha otoka Lanzarote">
+                <div class="poruka">Istraži svijet</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/kamenje1920.webp" 
+                srcset="slike/slajdshow/kamenje800.webp 800w, 
+                        slike/slajdshow/kamenje1000.webp 1000w, 
+                        slike/slajdshow/kamenje1200.webp 1200w, 
+                        slike/slajdshow/kamenje1600.webp 1600w, 
+                        slike/slajdshow/kamenje1920.webp 1920w" 
+                sizes="100vw"
+                loading="lazy" alt="Kamenje i litice na Lanzaroteu">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/zagreb1920.webp"
+                srcset="slike/slajdshow/zagreb800.webp 800w, 
+                        slike/slajdshow/zagreb1000.webp 1000w, 
+                        slike/slajdshow/zagreb1200.webp 1200w, 
+                        slike/slajdshow/zagreb1600.webp 1600w, 
+                        slike/slajdshow/zagreb1920.webp 1920w" 
+                sizes="100vw"
+                loading="lazy" alt="Centar grada Zagreba">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+        </div>
+    </section>
+    </main>
+   <footer>
+        <p>© 2026 MaTrevel</p>
+        <p>Izradio: Mateo Ćorković</p>
+    </footer>
+    <script src="scriptMINI.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MaTravel je web stranica napravljena za izradu završnog rada. Smisao stranice je da predstavlja agenciju za putovanja kako bih pomoću različitih verzija pokazao optimizaciju stranice.">
+    <title>MaTrevel - Lanzarote</title>
+    <meta name="author" content="Mateo Ćorković">
+    <link rel="stylesheet" href="izgledMINI.min.css">
+    <link rel="preload" as="font" href="Interfont.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="Cinzelfont.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+
+</head>
+<body>
+    <header class="navbar tamnija">
+        <div class="container">
+            <a href="index.html" class="logo">MaTravel</a>
+
+            <nav class="navigacija" id="navigacija">
+                <a href="index.html">Početna</a>
+                <a href="destinacije.html">Destinacije</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+            ☰
+            </div>
+        </div>
+    </header>
+    <main>
+    <div class="prazno"></div>
+    <div class="container">
+        <div class="natrag">
+            <a href="#" class="natraggumb" onclick="history.back(); return false;">← Natrag</a>
+        </div>
+        <section class="malagalerija">
+            <div class="kockica maloveca">
+                <img src="slike/lanzarote/2B2A4334.webp" alt="Muzej Lagomar">
+            </div>
+            <div class="kockica">
+                <img src="slike/lanzarote/2B2A5588.webp" alt="Plaža Playa Blanca">
+            </div>
+            <div class="kockica">
+                <img src="slike/lanzarote/2B2A5729.webp" alt="Pogled sa vrha otoka Lanzarote" loading="lazy">
+            </div>
+            <div class="kockica">
+                <img src="slike/lanzarote/2B2A7343.webp" alt="Vulkanska planina na otoku Lanzarote" loading="lazy">
+            </div>
+            <div class="kockica">
+                <img src="slike/lanzarote/2B2A7383.webp" alt="Kamenje i litice na Lanzaroteu" loading="lazy">
+            </div>
+        </section>
+        <nav class="malanavigacija">
+            <a href="#detalji"  class="malanavigacijalink active">Detalji</a>
+            <a href="#opcenito"  class="malanavigacijalink">Općenito</a>
+            <a href="#lokacije" class="malanavigacijalink">Lokacije</a>
+            <a href="#rezervacije" class="malanavigacijalink">Rezervacije</a>
+        </nav>
+        <section id="detalji" class="detalji">
+            <div class="detaljilijevo">
+                <h1>Lanzarote</h1>
+                    <h2><i class="fa-solid fa-location-dot"></i> Španjolska</h2>
+                    <h2><i class="fa-solid fa-thermometer-empty"></i> 25°C</h2>
+                    <div class="ocjena">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                <p>Lanazrote je otok u Španjoslkoj. Poznat je po svojoj tropskoj klimi, plavom moru i zanimljivoj prirodi. Idealan je za obiteljska, poslovna, romantična pa čak i solo putovanja.</p>
+                <section class="smjestaj">
+                    <h2>O smještaju</h2>
+                    <ul class="listasmjestaj">
+                        <li><i class="fa-solid fa-cutlery"></i> Kuhinja sa svim osnovnim aparatima</li>
+                        <li><i class="fa-solid fa-wind"></i> Klimatizacija</li>
+                        <li><i class="fa-solid fa-wifi"></i> Besplatan WiFi</li>
+                        <li><i class="fa-solid fa-bath"></i> Dvije kupaonice</li>
+                        <li><i class="fa-solid fa-eye"></i> Terasa sa pogledom na more</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="detaljidesno">
+                <h2 class="cijena">Cijena: 899€ <span class="prekrizeno">1099€</span></h2>
+                <p>6 noćenja - 2 osobe - povratna avionska karta</p>
+                <form class="formarezervacije">
+                    <label for="ime">Ime</label>
+                    <input type="text" id="ime" name="ime">
+                    <label for="prezime">Prezime</label>
+                    <input type="text" id="prezime" name="prezime">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                    <label for="osobe">Broj osoba</label>
+                    <select id="osobe">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <label for="datum">Datum putovanja</label>
+                    <input type="date" id="datum">
+                    <button type="submit">Rezerviraj</button>
+                </form>
+            </div>
+        </section>
+        <section id="opcenito" class="maloopcenito skriveno2">
+            <div class="lijevoopcenito">
+                <h1>Općenito o destinaciji</h1>
+                <p>Vulkanski otok u Španjolskoj poznat po crnim plažama i prirodi. Jedan od Kanarskih otoka smješten je zapadno od Afrike na Atlantskom oceanu. Temperature rijetko padaju ispod 20 stupnjeva pa čak i tijekom zime. </p>
+                <h2>Zašto baš Lanzarote</h2>
+                <p>Otok ima prekrasne plaže, izvanzemaljsku prirodu i izoliran je od ostatka svijeta. Zanimljivost je da su sve kuće bijele boje, te mu to daje jedinstveni izgled.</p>
+            </div>
+
+            <div class="opcenitokarta">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d267140.21772744664!2d-13.815483811443839!3d29.0398019918066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4623cd1ca2398b%3A0xa2a0d68ac57b1518!2sLanzarote!5e1!3m2!1shr!2shr!4v1779822736338!5m2!1shr!2shr" width="350" height="300" style="border:1px solid black;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                
+            </iframe>
+            </div>
+        </section>
+        <section id="lokacije" class="malalokacija skriveno">
+            <h1>Top lokacije</h1>
+            <div class="malekarticelokacija">
+                <div class="malakarticalokacija">
+                    <img src="slike/lanzarote/lanzarote2.webp" alt="Playa de Famara" loading="lazy">
+                    <h2>Playa de Famara</h2>
+                    <p>Jedna on najvećih plaža na otoku.</p>
+                </div>
+                <div class="malakarticalokacija">
+                    <img src="slike/lanzarote/2B2A4334.webp" alt="Muzej Lagomar" loading="lazy">
+                    <h2>Muzej Lagomar</h2>
+                    <p>Najpoznatijih građevina na otoku. </p>
+                </div>
+                <div class="malakarticalokacija">
+                    <img src="slike/lanzarote/2B2A7242.webp" alt="Crna plaža na otoku Lanzarote" loading="lazy">
+                    <h2>Playa de Montaña Bermeja</h2>
+                    <p>Crna plaža na zapadnoj obali otoka.</p>
+                </div>
+            </div>
+        </section>
+        <section id="rezervacije" class="malorezervacije skriveno2">
+            <h1>Informacije o rezervacijama</h1>
+            <div class="rezervacijesve">
+                <div class="rezervacijelijevo">
+                    <h2>Što je uključeno?</h2>
+                    <ul class="listasmjestaj">
+                        <li><i class="fa-solid fa-plane"></i> Povratna avionska karta</li>
+                        <li><i class="fa-solid fa-bus"></i> Prijevoz od aerodroma do hotela</li>
+                        <li><i class="fa-solid fa-mug-saucer"></i> Doručak u hotelu</li>
+                        <li><i class="fa-solid fa-route"></i> Prijevoz između atrakcija</li>
+                    </ul>
+            </div>
+            <div class="rezervacijedesno">
+                <h2>Uvjeti rezervacije</h2>
+                <p>Rezervacije se mogu napraviti najmanje tjedan dana prije polaska.</p>
+                <p>Otkazivanje putovanja moguće je do 48 sati prije polaska.</p>
+                <p>Za državljane EU nije potrebna viza.</p>
+                <p>Check-in je od 14:00 sati.</p>
+            </div>    
+            </div>
+            
+        </section>
+    </div>
+
+    <section class="destinacije skriveno destinacijedodatno">
+        <div class="container">
+            <h2>Popularne destinacije</h2>
+            <div class="karticedodatne">
+                <a href="budimpesta.html" class="karticadodatna budimpesta skriveno2">
+                    <div class="zoom"></div>
+                    <div class="tamnije"></div>
+                    <div class="karticasadrzaj">
+                        <h3>Budimpešta</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i> Mađarska</h4>
+                    </div>
+                </a>
+                <a href="casablanca.html" class="karticadodatna casablanca skriveno">
+                    <div class="zoom"></div>
+                    <div class="tamnije"></div>
+                    <div class="karticasadrzaj">
+                        <h3>Casablanca</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i> Maroko</h4>
+                    </div>
+                </a>
+                <a href="venecija.html" class="karticadodatna venecija skriveno2">
+                    <div class="zoom"></div>
+                    <div class="tamnije"></div>
+                    <div class="karticasadrzaj">
+                        <h3>Venecija</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i> Italija</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="slajdshow skriveno">
+        <div class="kutijaslajd">
+            <div class="slajd active">
+                <img src="slike/slajdshow/venecija1920.webp"
+                srcset="slike/slajdshow/venecija800.webp 800w, 
+                        slike/slajdshow/venecija1000.webp 1000w, 
+                        slike/slajdshow/venecija1200.webp 1200w, 
+                        slike/slajdshow/venecija1600.webp 1600w, 
+                        slike/slajdshow/venecija1920.webp 1920w" 
+                sizes="100vw"
+                loading="lazy" alt="Kanali u Veneciji">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/verona1920.webp"
+                srcset="slike/slajdshow/verona800.webp 800w, 
+                        slike/slajdshow/verona1000.webp 1000w, 
+                        slike/slajdshow/verona1200.webp 1200w, 
+                        slike/slajdshow/verona1600.webp 1600w, 
+                        slike/slajdshow/verona1920.webp 1920w" 
+                sizes="100vw"
+                loading="lazy" alt="Zgrade grada Verona">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/lanzarote31920.webp" 
+                srcset="slike/slajdshow/lanzarote3800.webp 800w, 
+                        slike/slajdshow/lanzarote31000.webp 1000w, 
+                        slike/slajdshow/lanzarote31200.webp 1200w, 
+                        slike/slajdshow/lanzarote31600.webp 1600w, 
+                        slike/slajdshow/lanzarote31920.webp 1920w" 
+                sizes="100vw"
+                loading="lazy" alt="Pogled sa vrha otoka Lanzarote">
+                <div class="poruka">Istraži svijet</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/kamenje1920.webp" 
+                srcset="slike/slajdshow/kamenje800.webp 800w, 
+                        slike/slajdshow/kamenje1000.webp 1000w, 
+                        slike/slajdshow/kamenje1200.webp 1200w, 
+                        slike/slajdshow/kamenje1600.webp 1600w, 
+                        slike/slajdshow/kamenje1920.webp 1920w" 
+                sizes="100vw"
+                loading="lazy" alt="Kamenje i litice na Lanzaroteu">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/zagreb1920.webp"
+                srcset="slike/slajdshow/zagreb800.webp 800w, 
+                        slike/slajdshow/zagreb1000.webp 1000w, 
+                        slike/slajdshow/zagreb1200.webp 1200w, 
+                        slike/slajdshow/zagreb1600.webp 1600w, 
+                        slike/slajdshow/zagreb1920.webp 1920w" 
+                sizes="100vw"
+                loading="lazy" alt="Centar grada Zagreba">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+        </div>
+    </section>
+   </main>
+   <footer>
+        <p>© 2026 MaTrevel</p>
+        <p>Izradio: Mateo Ćorković</p>
+    </footer>
+    <script src="scriptMINI.min.js"></script>
+</body>
+</html>
