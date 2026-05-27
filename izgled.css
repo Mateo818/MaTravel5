@@ -822,7 +822,7 @@ section {
     text-decoration: none;
     cursor: pointer;
     backdrop-filter: blur(2px) brightness(0.2);
-    background: rgba(15, 76, 92, 0.25);
+    background: rgba(9, 43, 51, 0.637);
     border: 1px solid #0f4c5c;
 }
 .formarezervacije label{
