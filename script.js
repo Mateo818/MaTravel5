@@ -66,3 +66,30 @@ function prikazi() {
 window.addEventListener("scroll", prikazi);
 window.addEventListener("load", prikazi);
 window.addEventListener("resize", prikazi);
+
+
+
+
+const linkovi = document.querySelectorAll(".malanavigacijalink");
+const sections = document.querySelectorAll("section[id]");
+
+linkovi.forEach(link => {
+    link.addEventListener("click", e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+    });
+});
+
+window.addEventListener("scroll", () => {
+    let trenutno = "";
+    sections.forEach(s => {
+        if (scrollY >= s.offsetTop - 150) {
+            trenutno = s.id;
+        }
+    });
+    linkovi.forEach(link => {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + trenutno);
+    });
+});
+

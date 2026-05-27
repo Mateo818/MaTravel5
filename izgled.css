@@ -730,6 +730,333 @@ h1{
 html{
     scroll-behavior: smooth;
 }
+.malagalerija{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: 200px 200px; 
+    gap: 3px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+.kockica{
+    overflow: hidden;
+    border: 1px solid black;
+}
+.kockica img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.kockica img:hover{
+    transform: scale(1.02);
+    filter: brightness(77%);
+}
+.maloveca{
+    grid-row: 1/3;
+}
+.natraggumb{
+    margin-top: 120px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.natraggumb:hover{
+    color: #0f4c5c;
+    transition: 0.4s;
+}
+.natrag{
+    margin-top: 90px;
+}
+section {
+    scroll-margin-top: 55px;
+}
+
+.malanavigacija{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    text-decoration: none;
+    color: black;
+    background:white;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid black;
+}
+.malanavigacija a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 15px 15px 10px 15px;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+}
+.malanavigacija a:hover{
+    border-bottom: 2px solid #0f4c5c;
+    color:#0f4c5c;
+}
+.malanavigacija a.active{
+    border-bottom: 2px solid #0f4c5c;
+    color:#0f4c5c;
+}
+.formarezervacije{
+    display: flex;
+    flex-direction: column;
+}
+.formarezervacije input, .formarezervacije select{
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+.formarezervacije button{
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    color: #FDF6EC;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    backdrop-filter: blur(2px) brightness(0.2);
+    background: rgba(15, 76, 92, 0.25);
+    border: 1px solid #0f4c5c;
+}
+.formarezervacije label{
+    padding: 15px 0 0 0 ;
+}
+.formarezervacije button:hover{
+    background-color: #e9c46a;
+    color: black;
+    transition: 0.5s;
+    backdrop-filter: blur(2px) brightness(1);
+    background: rgba(92, 87, 15, 0.25);
+    border: 1px solid #e9c46a;
+    text-decoration: none;
+}
+.detalji{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.detalji h1{
+    color: #0f4c5c;
+    padding-top: 0px;
+}
+.detalji h2{
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.detalji p{
+    padding-top: 15px;
+    line-height: 1.6;
+}
+.ocjena{
+    margin-top: 10px;
+}
+.smjestaj{
+    padding-top: 20px;
+}
+.smjestaj h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.listasmjestaj{
+    list-style: none;
+    padding: 0;
+}
+.listasmjestaj li{
+    padding: 17px 0 0 2px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.listasmjestaj i{
+    padding: 0 10px 0 0;
+    width: 22px;
+    text-align: center;
+    font-size: 20px;
+
+}
+.detaljilijevo{
+    flex: 2;
+    border: 1px solid black;
+    padding: 25px;
+    
+}
+.detaljidesno{
+    flex: 1;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #d6bea754;
+}
+.detaljidesno h2{
+    font-size: 26px;
+}
+.maloopcenito{
+    border: 1px solid black;
+    padding: 30px;
+}
+.maloopcenito h1{
+    font-size: 28px;
+    padding: 0 0 15px 0;
+}
+.maloopcenito h2{
+    font-size: 22px;
+    padding: 25px 0 15px 0;
+}
+.maloopcenito p{
+    line-height: 1.6;
+}
+.malalokacija{
+    border: 1px solid black;
+    margin-top: 30px;
+    padding: 30px;
+}
+.malalokacija h1{
+    font-size: 28px;
+    padding: 0 0 15px 0;
+}
+.malalokacija h2{
+    font-size: 22px;
+    padding: 15px 0 15px 0;
+}
+.malorezervacije{
+    border: 1px solid black;
+    margin-top: 30px;
+    padding: 30px;
+}
+.malorezervacije h1{
+    font-size: 28px;
+    padding: 0 0 15px 0;
+}
+.malorezervacije h2{
+    font-size: 22px;
+    padding: 15px 0 15px 0;
+}
+.maloopcenito{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.lijeopcenito{
+    flex: 1;
+}
+.opcenitokarta{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.malekarticelokacija{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.malakarticalokacija{
+    width: 30%;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    background-color: #d6bea754;
+}
+.malakarticalokacija img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.malakarticalokacija img:hover{
+    transform: scale(1.05);
+    filter: brightness(77%);
+}
+.malakarticalokacija h2{
+    font-size: 18px;
+    padding: 5px;
+    color: #0f4c5c;
+}
+.malakarticalokacija p{
+    font-size: 16px;
+    padding: 0 0 5px 5px;
+}
+.rezervacijesve{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.rezervacijelijevo{
+    flex: 1;
+}
+.rezervacijedesno{
+    flex: 1;
+}
+.rezervacijedesno p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+.rezervacijedesno h2{
+    padding-top: 0;
+    color: #0f4c5c;
+}
+.rezervacijelijevo h2{
+    padding: 0;
+    color: #0f4c5c;
+}
+.destinacijedodatno{
+    background-color:white;
+}
+
+.karticedodatne{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.karticadodatna{
+    width: 30%;
+    height: 300px;
+    border: 1px solid #0f4c5c;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: #FDF6EC;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.karticadodatna:hover .karticasadrzaj{
+    transform: translateY(-6px);
+}
+.karticadodatna:hover .tamnije{
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0.35)
+    );
+}
+.karticadodatna:hover .zoom{
+    transform: scale(1.10);
+}
+.prekrizeno{
+    text-decoration: line-through;
+    font-size: 22px;
+    color: #313131;
+    font-weight: 500;
+}
+.cijena{
+    font-size: 26px;
+    color: #0f4c5c;
+    font-weight: 600;
+}
 @media (max-width: 1270px) {
     .container{
         padding: 0 20px;
@@ -883,5 +1210,71 @@ html{
     }
     .zastobasmi{
         background-image: url("slike/zastobasmimobitel.webp");
+    }
+     .malagalerija {
+         display: block;
+         margin-top: 15px;
+    } 
+    .malagalerija .kockica:not(:first-child) {
+        display: none;
+    }
+    .malagalerija .kockica {
+        width: 100%;
+        height: 300px;
+    }
+    .malagalerija .kockica img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .malanavigacija{
+        justify-content: space-around;
+        white-space: nowrap;
+        
+    }
+    .malanavigacija a{
+        padding: 5px 2px 5px 0;
+    }
+    .natrag{
+        margin-top: 80px;
+    }
+    .detalji{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .detaljilijevo{
+        padding: 15px;
+    }
+    .opcenitokarta{
+        display: none;
+    }
+    .maloopcenito{
+        padding: 15px;
+        flex-direction: column;
+    }
+    .malekarticelokacija{
+        flex-direction: column;
+        width: 100%;
+    }
+    .malalokacija{
+        padding: 15px;
+    }
+    .malalokacija h1{
+        padding:  0 0 10px 0;
+    }
+    .malakarticalokacija{
+        width: 100%;
+    }
+    .malorezervacije{
+        padding: 15px;
+    }
+    .rezervacijesve{
+        flex-direction: column;
+    }
+    .destinacijedodatno{
+        flex-direction: column;
+    }
+    .karticadodatna{
+        width: 100%;
     }
 }
